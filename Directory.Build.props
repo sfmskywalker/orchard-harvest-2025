@@ -2,18 +2,11 @@
     <PropertyGroup>
         <Authors>Elsa Workflows Community</Authors>
         <Copyright>2025</Copyright>
-        
         <RepositoryUrl>https://github.com/sfmskywalker/orchard-harvest-2025</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <AnalysisModeDocumentation>Default</AnalysisModeDocumentation>
-        <AnalysisLevelDocumentation>latest</AnalysisLevelDocumentation>
-        
         <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     </PropertyGroup>
     <PropertyGroup>
@@ -22,11 +15,8 @@
         <NoWarn>$(NoWarn);IL2026;IL2046;IL2057;IL2067;IL2070;IL2072;IL2075;IL2087;IL2091</NoWarn>
     </PropertyGroup>
     <PropertyGroup>
-        <ElsaVersion>3.6.0-preview.3788</ElsaVersion>
-        <ElsaStudioVersion>3.6.0-preview.1261</ElsaStudioVersion>
-        <ElsaExtensionsVersion>3.6.0-preview.166</ElsaExtensionsVersion>
         <OrchardVersion>3.0.0-preview-18758</OrchardVersion>
-        <OrchardElsaVersion>3.6.0-preview.36</OrchardElsaVersion>
+        <OrchardElsaVersion>3.6.0-preview.42</OrchardElsaVersion>
         <MicrosoftVersion>9.0.9</MicrosoftVersion>
     </PropertyGroup>
 </Project>

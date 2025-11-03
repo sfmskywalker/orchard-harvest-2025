@@ -3,15 +3,6 @@
         <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
         <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
     </PropertyGroup>
-    <ItemGroup Label="Elsa">
-
-    </ItemGroup>
-    <ItemGroup Label="Elsa Studio">
-
-    </ItemGroup>
-    <ItemGroup Label="Elsa Extensions">
-
-    </ItemGroup>
     <ItemGroup Label="OrchardCore.Elsa">
         <PackageVersion Include="OrchardCore.Elsa" Version="$(OrchardElsaVersion)"/>
         <PackageVersion Include="OrchardCore.Elsa.Contents" Version="$(OrchardElsaVersion)"/>
