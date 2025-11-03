@@ -26,7 +26,7 @@
         <ElsaStudioVersion>3.6.0-preview.1261</ElsaStudioVersion>
         <ElsaExtensionsVersion>3.6.0-preview.166</ElsaExtensionsVersion>
         <OrchardVersion>3.0.0-preview-18758</OrchardVersion>
-        <OrchardElsaVersion>3.6.0-preview.33</OrchardElsaVersion>
+        <OrchardElsaVersion>3.6.0-preview.36</OrchardElsaVersion>
         <MicrosoftVersion>9.0.9</MicrosoftVersion>
     </PropertyGroup>
 </Project>
