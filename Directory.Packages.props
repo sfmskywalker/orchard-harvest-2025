@@ -1,0 +1,54 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <CentralPackageTransitivePinningEnabled>false</CentralPackageTransitivePinningEnabled>
+    </PropertyGroup>
+    <ItemGroup Label="Elsa">
+
+    </ItemGroup>
+    <ItemGroup Label="Elsa Studio">
+
+    </ItemGroup>
+    <ItemGroup Label="Elsa Extensions">
+
+    </ItemGroup>
+    <ItemGroup Label="OrchardCore.Elsa">
+        <PackageVersion Include="OrchardCore.Elsa" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.Contents" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.Data" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.Designer" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.Timers" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.Queries" Version="$(OrchardElsaVersion)"/>
+        <PackageVersion Include="OrchardCore.Elsa.UI" Version="$(OrchardElsaVersion)"/>
+    </ItemGroup>
+    <ItemGroup Label="Orchard">
+        <PackageVersion Include="OrchardCore.Admin.Abstractions" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Contents" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Infrastructure" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Module.Targets" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Application.Cms.Targets" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Logging.Serilog" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.ContentManagement" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.ContentTypes.Abstractions" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.DisplayManagement" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Navigation.Core" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.OpenId.Core" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Queries" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.ResourceManagement" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Taxonomies.Core" Version="$(OrchardVersion)"/>
+        <PackageVersion Include="OrchardCore.Title" Version="$(OrchardVersion)"/>
+    </ItemGroup>
+    <ItemGroup Label="Microsoft">
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="$(MicrosoftVersion)"/>
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="$(MicrosoftVersion)" PrivateAssets="all"/>
+        <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="$(MicrosoftVersion)"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageVersion Include="ncrontab" Version="3.3.3"/>
+        <PackageVersion Include="JetBrains.Annotations" Version="2025.2.2"/>
+        <PackageVersion Include="System.Linq.Dynamic.Core" Version="1.6.7"/>
+        <PackageVersion Include="YesSql.Abstractions" Version="5.4.6"/>
+        <PackageVersion Include="Quartz" Version="3.15.0"/>
+        <PackageVersion Include="Quartz.Extensions.Hosting" Version="3.15.0"/>
+    </ItemGroup>
+</Project>
