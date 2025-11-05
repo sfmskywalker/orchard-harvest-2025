@@ -5,6 +5,7 @@ using Elsa.Workflows.Models;
 
 namespace OrchardHarvest2025.Web.Activities;
 
+[Activity("OrchardHarvest", "Orchard Harvest", "Returns the sum of two numbers")]
 public class Sum : CodeActivity<double>
 {
     [Input(Description = "The first number to add")]

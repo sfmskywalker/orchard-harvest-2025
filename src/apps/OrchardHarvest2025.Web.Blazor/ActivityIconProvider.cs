@@ -9,11 +9,12 @@ public class ActivityIconProvider : IActivityDisplaySettingsProvider
 {
     public IDictionary<string, ActivityDisplaySettings> GetSettings()
     {
-        var anthracite = "#2E2E2E";        
+        var harvest = "#2E2E2E";        
         
         return new Dictionary<string, ActivityDisplaySettings>
         {
-            ["OrchardHarvest.ProductAgent"] = new(anthracite, CustomIcons.Robot)
+            ["OrchardHarvest.ProductAgent"] = new(harvest, CustomIcons.Robot),
+            ["OrchardHarvest.Sum"] = new(harvest, CustomIcons.Sigma)
         };
     }
 }
