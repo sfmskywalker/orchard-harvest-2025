@@ -16,7 +16,7 @@
     </PropertyGroup>
     <PropertyGroup>
         <OrchardVersion>3.0.0-preview-18758</OrchardVersion>
-        <OrchardElsaVersion>3.6.0-preview.46</OrchardElsaVersion>
+        <OrchardElsaVersion>3.6.0-preview.47</OrchardElsaVersion>
         <ElsaExtensionsVersion>3.6.0-preview.167</ElsaExtensionsVersion>
         <MicrosoftVersion>9.0.10</MicrosoftVersion>
     </PropertyGroup>
