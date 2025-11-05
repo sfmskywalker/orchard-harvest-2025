@@ -7,8 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Elsa.Studio.Agents" />
         <PackageReference Include="JetBrains.Annotations" />
         <PackageReference Include="OrchardCore.Elsa.Designer"/>
+        <PackageReference Include="OrchardCore.Elsa.Designer.BlazorWasm"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" PrivateAssets="all" />
     </ItemGroup>

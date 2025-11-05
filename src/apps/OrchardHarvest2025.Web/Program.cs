@@ -1,7 +1,7 @@
-using Elsa.Extensions;
 using Elsa.Mediator.Options;
 using OrchardCore.Elsa.Extensions;
 using OrchardCore.Elsa.Middleware;
+using OrchardHarvest2025.Web;
 using Quartz;
 using Serilog;
 
@@ -16,16 +16,7 @@ builder.Host.UseSerilog((context, logger) =>
 builder.Services
     .AddQuartz()
     .AddQuartzHostedService()
-    .AddOrchardCms(orchard =>
-    {
-        orchard.ConfigureServices(services =>
-        {
-            services.ConfigureElsa(elsa =>
-            {
-                elsa.AddActivitiesFrom<Program>();
-            });
-        });
-    });
+    .AddOrchardCms(orchard => orchard.RegisterStartup<Startup>());
 
 builder.Services.Configure<MediatorOptions>(options => options.JobWorkerCount = 1);
 builder.Services.ConfigureWebAssemblyStaticFiles();
