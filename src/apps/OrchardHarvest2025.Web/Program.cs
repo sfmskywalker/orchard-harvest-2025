@@ -2,6 +2,7 @@ using Elsa.Mediator.Options;
 using OrchardCore.Elsa.Extensions;
 using OrchardCore.Elsa.Middleware;
 using OrchardHarvest2025.Web;
+using OrchardHarvest2025.Web.Options;
 using Quartz;
 using Serilog;
 
@@ -19,6 +20,8 @@ builder.Services
     .AddOrchardCms(orchard => orchard.RegisterStartup<Startup>());
 
 builder.Services.Configure<MediatorOptions>(options => options.JobWorkerCount = 1);
+builder.Services.Configure<OpenAIOptions>(options => builder.Configuration.Bind("Elsa:OpenAI", options));
+builder.Services.Configure<GoogleSearchOptions>(options => builder.Configuration.Bind("Elsa:GoogleSearch", options));
 builder.Services.ConfigureWebAssemblyStaticFiles();
 
 var app = builder.Build();
