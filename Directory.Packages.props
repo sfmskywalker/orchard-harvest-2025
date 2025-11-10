@@ -31,7 +31,7 @@
         <PackageVersion Include="OrchardCore.Title" Version="$(OrchardVersion)"/>
     </ItemGroup>
     <ItemGroup Label="Elsa.Extensions">
-        <PackageVersion Include="Elsa.Agents.Activities" Version="3.6.0-preview.167"/>
+        <PackageVersion Include="Elsa.Agents.Activities" Version="$(ElsaExtensionsVersion)"/>
         <PackageVersion Include="Elsa.Agents.Api" Version="$(ElsaExtensionsVersion)"/>
         <PackageVersion Include="Elsa.Agents.Core" Version="$(ElsaExtensionsVersion)"/>
         <PackageVersion Include="Elsa.Studio.Agents" Version="$(ElsaExtensionsVersion)"/>

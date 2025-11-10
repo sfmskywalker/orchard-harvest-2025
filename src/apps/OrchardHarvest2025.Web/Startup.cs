@@ -16,6 +16,8 @@ public class Startup(IServiceProvider serviceProvider) : StartupBase
         var shellConfiguration = serviceProvider.GetRequiredService<IShellConfiguration>();
         services.Configure<AgentsOptions>(options => { shellConfiguration.Bind("Elsa:Agents", options); });
         services.AddPluginProvider<WebSearchPluginProvider>();
+        services.AddPluginProvider<JsonDiffPluginProvider>();
+        services.AddPluginProvider<JsonHumanFieldDetectorPluginProvider>();
         services.ConfigureElsa(elsa =>
         {
             elsa.AddActivitiesFrom<Program>();
