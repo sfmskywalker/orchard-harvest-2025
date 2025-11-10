@@ -8,6 +8,7 @@
         <PackageReference Include="Elsa.Agents.Activities"/>
         <PackageReference Include="Elsa.Agents.Api"/>
         <PackageReference Include="Elsa.Agents.Core"/>
+        <PackageReference Include="Elsa.Expressions.CSharp"/>
         <PackageReference Include="OrchardCore.Application.Cms.Targets"/>
         <PackageReference Include="OrchardCore.Logging.Serilog"/>
         <PackageReference Include="OrchardCore.Elsa"/>

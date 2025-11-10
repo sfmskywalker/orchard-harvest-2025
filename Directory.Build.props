@@ -18,6 +18,7 @@
         <OrchardVersion>3.0.0-preview-18758</OrchardVersion>
         <OrchardElsaVersion>3.6.0-preview.49</OrchardElsaVersion>
         <ElsaExtensionsVersion>3.6.0-preview.172</ElsaExtensionsVersion>
+        <ElsaVersion>3.6.0-preview.3834</ElsaVersion>
         <MicrosoftVersion>9.0.10</MicrosoftVersion>
     </PropertyGroup>
 </Project>

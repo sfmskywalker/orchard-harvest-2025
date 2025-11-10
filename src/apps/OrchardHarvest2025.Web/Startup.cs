@@ -39,6 +39,7 @@ public class Startup(IServiceProvider serviceProvider) : StartupBase
                     engine.Execute("function sayHelloWorld() { return greet('World'); }");
                 });
             });
+            elsa.UseCSharp();
         });
     }
 }
