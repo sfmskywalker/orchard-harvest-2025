@@ -17,12 +17,12 @@ builder.Host.UseSerilog((context, logger) =>
 builder.Services
     .AddQuartz()
     .AddQuartzHostedService()
+    .ConfigureWebAssemblyStaticFiles()
     .AddOrchardCms(orchard => orchard.RegisterStartup<Startup>());
 
 builder.Services.Configure<MediatorOptions>(options => options.JobWorkerCount = 1);
 builder.Services.Configure<OpenAIOptions>(options => builder.Configuration.Bind("Elsa:OpenAI", options));
 builder.Services.Configure<GoogleSearchOptions>(options => builder.Configuration.Bind("Elsa:GoogleSearch", options));
-builder.Services.ConfigureWebAssemblyStaticFiles();
 
 var app = builder.Build();
 
